@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<meta charset="utf-8">
 	<title>Exercicio de criptografia</title>
 </head>
-<body>
-	<select id="type">
-		<option value="">Selecione</option>
-		<option value="cesar">Cersar</option>
-		<option value="zenitPolar">Zenit Polar</option>
-		<option value="vigenere">vigenere</option>
-	</select>
-	<br>
-	<input type="text" id="key" placeholder="chave">
-	<br>
-	<input type="text" id="text" placeholder="texto">
-	<br>
-	<button id="btn">criptografar</button>
+<body class="container">
+	<div class="row">
+		<div class="col-md-10 offset-md-1">
+			<h1 class="display-3">Exercicio de Criptografia</h1>
 
-	<br>
+			<div class="mt-5">
+				<select id="type" class="form-control">
+					<option value="">Selecione</option>
+					<option value="cesar">Cersar</option>
+					<option value="zenitPolar">Zenit Polar</option>
+					<option value="vigenere">vigenere</option>
+				</select>
+				<br>
+				<input type="text" id="key" placeholder="chave" class="form-control">
+				<br>
+				<input type="text" id="text" placeholder="texto" class="form-control">
+				<br>
+				<button id="btn" class="btn btn-success btn-block">criptografar</button>
 
-	<div id='result'></div>
+				<br>
+			</div>
+			<h5 class="display-4">Resultado</h5>
+			<div id='result'></div>
+		</div>
+	</div>
 </body>
 <script type="text/javascript" src="cript.js"></script>
 </html>
