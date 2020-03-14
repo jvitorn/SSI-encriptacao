@@ -67,5 +67,27 @@ function vigenere(text,key){
 }
 
 function zenitPolar(text){
-
+	let texto = document.getElementById('text').value;
+	let palavras = texto.split("");
+	if(texto){
+		for(let c = 0 ;c<palavras.length;c++){
+			if(palavras[c] == "z"){
+				palavras[c] = "p";
+			}else if(palavras[c] == "e"){
+				palavras[c] ="o";
+			}else if(palavras[c] == "n"){
+				palavras[c] = "l";
+			}else if(palavras[c] == "i"){
+				palavras[c] ="a";
+			}else if(palavras[c]== "t"){
+				palavras[c] ="r";
+			}
+		}
+		
+	}else{
+		alert('Digite algum texto');
+	}
+	
+	
+	return palavras;
 }
