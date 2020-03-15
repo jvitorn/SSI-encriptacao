@@ -81,13 +81,26 @@ function zenitPolar(text){
 				palavras[c] ="a";
 			}else if(palavras[c]== "t"){
 				palavras[c] ="r";
-			}
-		}
-		
+            }
+            
+        }
+        for(let c = 0 ;c<palavras.length;c++){
+            if(palavras[c] == "p"){
+                    palavras[c] = "z";
+            }else if(palavras[c] == "o" ){
+                    palavras[c] ="e";
+                }else if(palavras[c] == "l" ){
+                    palavras[c] = "n";
+                }else if(palavras[c] == "a" ){
+                    palavras[c] ="i";
+                }else if(palavras[c]== "r" ){
+                    palavras[c] ="t";
+                }
+        }
 	}else{
 		alert('Digite algum texto');
 	}
 	
 	
-	return palavras;
+	return palavras.join("");
 }
